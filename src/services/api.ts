@@ -12,10 +12,10 @@ const BASE_URL = '/api';
 const api = axios.create({
   baseURL: BASE_URL,
   headers: {
-    // 'x-apikey': API_KEY
-    'x-api-key': 'live_f15Pdl6gAFzO0fHTWiHZJU2OERimUreQQ4OCTVQxLN3jtK74z3SrbAcpapHzUbqe'
+    'x-api-key': API_KEY
   }
 });
+console.log(API_KEY);
 
 export const getKittys = (): Promise<AxiosResponse<Kitty[]>> => 
   api.get('/images/search?limit=10');
