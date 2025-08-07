@@ -3,6 +3,11 @@ export interface Kitty {
   url: string;
 }
 
+export interface FavorKitty {
+  id: string;
+  image: Kitty;
+  sub_id: string
+}
 
 interface ImportMetaEnv {
   readonly API_KEY: string
